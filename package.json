@@ -6,15 +6,24 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "check-types": "turbo run check-types",
+    "repo-cli:canary": "pnpm dlx @magnidev/repo-cli@canary"
   },
   "devDependencies": {
+    "@magnidev/repo-cli": "2.0.0-canary.1",
     "prettier": "^3.5.3",
     "turbo": "^2.5.4",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.11.1",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "release": {
+    "tagFormat": "${name}@${version}",
+    "versioningStrategy": "independent"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
