@@ -1,5 +1,5 @@
 {
-  "name": "@magnidev-test/typescript-config",
+  "name": "@magnidev-test/tsconfig",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
